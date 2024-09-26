@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp">
+
+    <!-- LinearLayout для отображения описания задачи -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- LinearLayout для отображения описания задачи -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView для отображения описания задачи -->
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="20sp"/>
+
+            <!-- TextView для отображения приоритета (скрыт) -->
+            <TextView
+                android:id="@+id/priorityTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- ImageView для отображения приоритета -->
+        <ImageView
+            android:id="@+id/priorityCircleImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/circle_background" />
+    </LinearLayout>
+
+    <!-- LinearLayout для следующего события с marginTop -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Добавьте элементы вашего следующего события здесь -->
+    </LinearLayout>
+
+    <!-- View для отображения полоски после следующего события -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+</LinearLayout>

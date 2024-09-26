@@ -1,0 +1,13 @@
+<resources>
+<string
+    name="app_name">Add a New Task</string>
+    <string name="describe">Describe your task...</string>
+    <string name="priority">Priority</string>
+    <string name="add_button">ADD</string>
+    <string-array name="priority_levels">
+        <item>low</item>
+        <item>medium</item>
+        <item>high</item>
+    </string-array>
+
+</resources>
